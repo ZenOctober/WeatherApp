@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="humidity_top">#68B1BC</color>
+    <color name="humidity_middle">#BEE598</color>
+    <color name="humidity_bottom">#F7FDA7</color>
+    <color name="visibility_top">#A3AE62</color>
+    <color name="visibility_middle">#C57367</color>
+    <color name="visibility_bottom">#748690</color>
+    <color name="temp_top">#CB4F5C</color>
+    <color name="temp_middle">#D79C66</color>
+    <color name="temp_bottom">#F7D681</color>
+    <color name="color_grey">#D3D3D3</color>
+    <color name="colorAccent">#fff</color>
+    <color name="settings_top">#c7e490</color>
+    <color name="settings_middle">#ec705b</color>
+    <color name="settings_bottom">#65b7b9</color>
+
+</resources>

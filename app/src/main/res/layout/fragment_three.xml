@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/fragment_one"
+    tools:context=".FragmentThree"
+    android:weightSum="8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1.5"
+        android:background="@color/temp_top">
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wind_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.21"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wind_top_bar"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.69"/>
+
+        <ImageView
+            android:id="@+id/settings_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/go_to_settings"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.21"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="5"
+        android:background="@color/temp_middle">
+
+        <TextView
+            android:id="@+id/txtWind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/api_values"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/initial_values"
+            />
+
+        <TextView
+            android:id="@+id/metrics_units"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/wind_metrics"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1.5"
+        android:background="@color/temp_bottom">
+
+        <ImageView
+            android:id="@+id/lower_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/city_name_btn"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <com.crechelessons.howhumidisit.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/txtWindCity"
+            android:layout_alignLeft="@id/lower_tab"
+            android:layout_alignTop="@id/lower_tab"
+            android:layout_alignRight="@id/lower_tab"
+            android:layout_alignBottom="@id/lower_tab"
+            android:layout_margin="1dp"
+            android:gravity="center"
+            android:textSize="@dimen/location_text_size"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/initial_location"/>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
